@@ -116,7 +116,7 @@ func Run(g *Generator) {
 			name.Name = t
 		}
 		if len(name.Name) == 0 {
-			log.Fatalf("--drop-embedded-types requires names in the form of [GOPACKAGE.]TYPENAME: %v", t)
+			log.Fatalf("--drop-embedded-fields requires names in the form of [GOPACKAGE.]TYPENAME: %v", t)
 		}
 		omitTypes[name] = struct{}{}
 	}
